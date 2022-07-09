@@ -3,17 +3,24 @@
 ### [Assignment](assignment.md)
 
 ## Project/Goals
-(fill in your description and goals here)
+Collect data from three different APIs (FourSquare,Yelp,Google) on buisnesses near a chosen location(latitude,longitude). 
+Data to compare between the API includes review/rating based values, price level and categories for the buisness type.  
+Take collected data and build databases. 
 
 ## Process
-### (your step 1)
-### (your step 2)
+Collect API request based on latitude/longitude
+Parse data into appropriate DataFrames
+Parse DataFrames into database
+Repeat for all APIs
+Compare results
 
 ## Results
-(fill in what you found about the comparative quality of API coverage in your chosen area)
+Chosen area did not have reviews across all venues but was able to compare between the available ratings
 
 ## Challenges 
-(discuss challenges you faced in the project)
+Parsing data twice, once from JSON to DataFrames, then again from DataFrames to SQlite database. Ensuring all data gets parsed correctly and the correct type. 
+Getting a significant result while avoiding having data misrepresented by NULL values
 
 ## Future Goals
-(what would you do if you had more time?)
+Compare the categories set by each API
+Use the total rating values and rating to determine popularity for the venue
